@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://wallpapercave.com/wp/wp3365574.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container1 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://wallpapercave.com/wp/wp3365574.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .6;
+    transition: .4s ease-in;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.navbar ul {
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 100;
+    list-style: none;
+}
+
+.navbar li {
+    float: left;
+    margin: 25px;
+}
+
+.navbar li:hover {
+    color: red;
+    transition: .4s ease-in-out;
+}
+
+
+/* dots */
+
+.dots {
+    position: absolute;
+    top: 1.5%;
+    left: 85%;
+    display: none;
+    border: 2px solid;
+}
+
+.dots .dot {
+    height: 7px;
+    width: 40px;
+    background-color: red;
+    box-shadow: 0px 0px 4px black;
+    margin: 5px;
+}
+
+
+/* @media screen and (max-width: 100px) */
+
+@media screen and (max-width:800px) {
+    .navbar ul {
+        display: none;
+    }
+    .navbar h1 {
+        text-align: left;
+    }
+    .dots {
+        display: block;
+    }
+}
+
+.navbaractive {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    transition: .4s ease-in;
+}
+
+.navbaractive h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.navbaractive ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    font-family: sans-serif;
+    font-weight: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+}
+
+.navbaractive h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.navbaractive h1:hover {
+    color: red;
+    transition: .4s ease-in-out;
+}
+
+.navbaractive li {
+    margin: 30px;
+    border: 2px solid white;
+}
+
+.navbaractive li:hover {
+    border: 2px solid white;
+}
+
+.dotsx {
+    position: absolute;
+    top: 10%;
+    left: 85%;
+    display: none;
+}
+
+.dotsx .dot1 {
+    height: 6px;
+    width: 40px;
+    background-color: red;
+    transform: rotate(45deg);
+    border: 2px solid white;
+    /* display: none; */
+    /* margin: 10px; */
+}
+
+.dotsx .dot2 {
+    height: 6px;
+    width: 40px;
+    background-color: red;
+    transform: rotate(-45deg);
+    border: 2px solid white;
+    margin-top: -5px;
+}
+
+.container2 .box1 {
+    height: 55%;
+    width: 80%;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    object-fit: cover;
+    object-position: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    /* display: none; */
+}
+
+
+/* blur */
+
+.container2 .box1 h1 {
+    font-size: 40px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 900;
+}
+
+.container2 .box1 p {
+    font-size: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    /* color:rgb(from red yellow blue black); */
+}
+
+.container2 button {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 900;
+    background-color: rgb(181, 59, 59);
+    border: none;
+    border-radius: 10px;
+}
+
+.container2 button:hover {
+    background-color: white;
+    transition: .5s ease-out;
+    color: red;
+}
+
+.container3 {
+    height: 400px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    display: none;
+}
+
+.container3 .quotbox {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.container3 .quotbox img {
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.container3 button {
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 900;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.container3 button:hover {
+    background-color: white;
+    color: red;
+    transition: .4s ease-in;
+}
+
+.container4 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://wallpaperaccess.com/full/3134382.jpg);
+    background-position: top;
+    background-color: rgb(61, 54, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    transition: .4s ease-in-out;
+}
+
+.box {
+    height: 60vh;
+    width: 70%;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .4s ease-in;
+    /* display: none; */
+}
+
+.quotesspace {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    overflow: scroll;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+.quotesspace::-webkit-scrollbar {
+    width: 0;
+}
+
+.container4 button {
+    height: 50px;
+    width: 120px;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 100;
+    border: none;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.container4 button:hover {
+    background-color: white;
+    color: red;
+    transition: .4s ease-out;
+}
